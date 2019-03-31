@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <title>Img Accordions</title>
+</head>
+
+<body>
+  <div class="heading">Scroll to see more</div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="wrapper">
+          <div class="wrapper__gallery wrap-effect-1">
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="wrapper">
+          <div class="wrapper__gallery wrap-effect-2">
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="wrapper">
+          <div class="wrapper__gallery wrap-effect-3">
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="wrapper wrap-effect-4">
+          <div class="wrapper__gallery">
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+            <div class="wrapper__gallery-item"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        Inspire by
+        <a class="inspire" href="https://dribbble.com/galshir" target="_blank"> &nbsp Galshir arts</a>
+        . Thank you
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      loop: true,
+      mousewheel: {},
+      effect: 'cube',
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false
+      }
+    });
+  </script>
+</body>
+
+</html>
