@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.box {
+  display: grid;
+  height: 600px;
+  padding: 0 50px 0 0;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+.box .cos1 {
+  background-size: cover;
+}
+.box .cos1:first-of-type {
+  grid-column: 2/span 2;
+  grid-row: 3/span 6;
+  background: url("https://i.pinimg.com/564x/69/91/f1/6991f13fb71a496afa5e1aa96be1d89d.jpg");
+  background-position: center;
+}
+.box .cos1:nth-of-type(2) {
+  grid-column: 7/-1;
+  grid-row: 2/span 10;
+  background: url("https://static1.squarespace.com/static/54379dc9e4b02667fff75285/5737ecd520c6471cf0632bbe/59312669cd0f68b9de1319e8/1498572331977/charlotte-tilbury-cosmetics-makeup-product-photographer-london-still-life-photography-1.jpg?format=750w");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box .cos1:last-of-type {
+  margin: 0 50px;
+  grid-column: 4/span 3;
+  grid-row: 8/-1;
+  background: url("https://static1.squarespace.com/static/54379dc9e4b02667fff75285/5737ecd520c6471cf0632bbe/5a52190ee2c483af0bfca957/1515342025149/topshop-still-life-photographer-london-make-up-beauty-cosmetics-product-photography-1.jpg?format=500w");
+  background-position: center;
+}
+.box .cos2 {
+  background-size: cover;
+}
+.box .cos2:first-of-type {
+  grid-column: 2/span 2;
+  grid-row: 3/span 6;
+  background: url("https://static1.squarespace.com/static/54379dc9e4b02667fff75285/5737ecd520c6471cf0632bbe/5750a69101dbae39a9a55948/1518711969270/chanel-make-up-compact-cosmetics-photography-london-photographer-cream-foundation-creative-still-life-1.jpg?format=500w");
+  background-position: center;
+}
+.box .cos2:last-of-type {
+  margin: 0 50px;
+  grid-column: 4/span 3;
+  grid-row: 8/-1;
+  background: url("https://static1.squarespace.com/static/54379dc9e4b02667fff75285/5737ecd520c6471cf0632bbe/5750a69186db43d2804d4846/1530351343447/chanel-make-up-compact-cosmetics-photography-london-photographer-cream-foundation-creative-still-life-2.jpg?format=500w");
+  background-position: center;
+}
+.box .cos3 {
+  background-size: contain;
+}
+.box .cos3:first-of-type {
+  grid-column: 2/span 2;
+  grid-row: 3/span 6;
+  background: url("https://static1.squarespace.com/static/54379dc9e4b02667fff75285/5737ecd520c6471cf0632bbe/5908a13b3a0411c14a094cc8/1540656281228/cosmetics-balance-makeup-product-photographer-london-still-life-photography-3-chanel.jpg?format=500w");
+  background-position: center;
+  background-size: contain;
+}
+.box .cos3:last-of-type {
+  margin: 0 50px;
+  grid-column: 4/span 3;
+  grid-row: 8/-1;
+  background: url("https://static1.squarespace.com/static/54379dc9e4b02667fff75285/5737ecd520c6471cf0632bbe/5908a1439f7456d3d9c60cf8/1540656281228/cosmetics-balance-makeup-product-photographer-london-still-life-photography-4-NARS.jpg?format=500w");
+  background-position: center;
+  background-size: contain;
+}
+.box .cos4 {
+  background-size: cover;
+}
+.box .cos4:first-of-type {
+  grid-column: 2/span 2;
+  grid-row: 3/span 6;
+  background: url("https://static1.squarespace.com/static/54379dc9e4b02667fff75285/5737ecd520c6471cf0632bbe/5bd48c31652dea6b53f7c66d/1540656448073/still-life-product-photographer-london-creative-product-photography-cosmetics-make-up-topshop-1.jpg?format=500w");
+  background-position: center;
+}
+.box .cos4:last-of-type {
+  margin: 0 50px;
+  grid-column: 4/span 3;
+  grid-row: 8/-1;
+  background: url("https://static1.squarespace.com/static/54379dc9e4b02667fff75285/5737ecd520c6471cf0632bbe/5bd48c319140b7c8c1354d93/1540656546255/still-life-product-photographer-london-creative-product-photography-cosmetics-make-up-topshop-2.jpg?format=500w");
+  background-position: center;
+}
+
+footer {
+  font-family: "Roboto Slab", serif;
+  height: 100px;
+  position: relative;
+  color: #4b5955;
+  background-color: navajowhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -300px;
+  left: 220px;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  letter-spacing: 4px;
+  background-color: #d4966d;
+  text-transform: uppercase;
+  box-shadow: 12px 16px 35px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+footer .buy:hover {
+  transform: scale(0.98);
+  box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.3);
+}
+footer .buy:focus {
+  outline: none;
+}
+footer .buy:active {
+  transform: scale(0.97);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */
